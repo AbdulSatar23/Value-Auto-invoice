@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Value Auto LLC - Invoice Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Value Auto LLC - Invoice Generator</h1>
+  </header>
+  <div class="container">
+    <label for="clientName">Client Name:</label>
+    <input type="text" id="clientName" placeholder="Enter client name">
+
+    <label for="item">Item Description:</label>
+    <input type="text" id="item" placeholder="e.g. Brake Repair">
+
+    <label for="amount">Amount ($):</label>
+    <input type="number" id="amount" placeholder="e.g. 150">
+
+    <button onclick="addItem()">Add Item</button>
+
+    <ul id="itemList"></ul>
+
+    <h3>Total: $<span id="total">0.00</span></h3>
+
+    <button onclick="generatePDF()">Download Invoice PDF</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
