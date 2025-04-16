@@ -106,3 +106,7 @@ function sendInvoiceEmail() {
     invoice_total: total,
     // Add other variables as needed
   });
+<header>
+  <img src="vALUE AUTO LOGO.png" alt="Value Auto LLC Logo" style="max-height: 80px; margin-bottom: 10px;">
+  <h1>Value Auto LLC - Invoice Generator</h1>
+</header>
